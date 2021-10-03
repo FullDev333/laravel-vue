@@ -1,0 +1,20 @@
+// Variables
+@import "variables";
+
+
+@media (max-width: 768px) {
+    .el-col-xs-0 {
+        display: none;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .el-col-sm-0 {
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .el-col-md-0 {
+        display: none;
+    }
+}

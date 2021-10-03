@@ -1,0 +1,270 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+ol,
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background: #F9FAFC;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 10px auto;
+    padding: 20px 10px;
+    background: #fff;
+    border: 1px solid #d1dbe5;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+}
+
+.content-box {
+    clear: both;
+    margin-top: 20px;
+}
+
+.sidebar-title {
+    margin: 30px 0 15px 0;
+    border-left: 5px solid red;
+    font-size: 18px;
+    padding: 0 0 2px 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.app-main {
+    width: 100%;
+}
+
+// 右边推荐栏
+.right-recommend {
+    .recommend-box {
+        margin-bottom: 30px;
+        h3 {
+            border-bottom: 1px solid #eee;
+            color: #58B7FF;
+            padding-bottom: 5px;
+            text-indent: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 0 10px 5px 5px;
+            a {
+                color: #ccc;
+                font-size: 12px;
+                float: right;
+            }
+            a:hover {
+                color: #333;
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                font-size: 14px;
+                a {
+                    color: #666;
+                }
+                a:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// 互动
+.interactive-box {
+    clear: both;
+    .interactive-list {
+        padding: 0 20px 0 10px;
+        .interactive-detail {
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            .user-face {
+                float: left;
+                border: 1px solid #eee;
+                border-radius: 3px;
+                overflow: hidden;
+                padding: 1px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .interactive-word {
+                float: left;
+                width: 95%;
+                box-sizing: border-box;
+                padding-left: 10px;
+                .user-name {
+                    margin-bottom: 5px;
+                    a {
+                        color: #406599;
+                        cursor: pointer;
+                    }
+                    span {
+                        color: #ccc;
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+                .interactive-content {
+                    line-height: 150%;
+                    color: #333;
+                }
+                .interactive-response-btn {
+                    margin: 5px 0;
+                    a {
+                        color: #406599;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .interactive-response {
+                margin-left: 5%;
+                width: 95%;
+                clear: both;
+                border-top: 1px solid #eee;
+                padding-top: 10px;
+                font-size: 12px;
+                .interactive-detail {
+                    border: none;
+                    .user-face {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 互动markdown框
+.interactive-now {
+    clear: both;
+    .interactive-now-content {
+        margin-bottom: 10px;
+        .ql-editor {
+            min-height: 200px;
+        }
+    }
+    .interactive-now-submit {
+        margin-bottom: 10px;
+        text-align: right;
+    }
+}
+
+// 分页
+.page-box {
+    clear: both;
+    text-align: center;
+    margin: 20px 0;
+}
+
+// 留言板
+.leave-container {
+    .leave-box {
+        padding-right: 20px;
+        margin-right: 10px;
+        border-right: 1px solid #eee;
+    }
+}
+
+// 头像框
+.avatar-uploader {
+    .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .el-upload:hover {
+        border-color: #20a0ff;
+    }
+    .avatar-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 178px;
+        height: 178px;
+        line-height: 178px;
+        text-align: center;
+    }
+    .avatar {
+        width: 178px;
+        height: 178px;
+        display: block;
+    }
+}
+
+.quill-editor {
+    border: 1px solid #ccc;
+}
+
+.ql-container.ql-snow {
+    border: none !important;
+}
+
+.interactive-content {
+    padding: 0 !important;
+}
+
+.user-title {
+    font-weight: normal;
+    font-size: 20px;
+    color: #838181;
+    border-bottom: 1px solid #DAD7D7;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.intro-tip {
+    color: #B7B7B7;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .web-logo {
+        margin-left: 10px;
+        padding: 0 10px;
+    }
+
+    .web-search {
+        display: none;
+    }
+}
